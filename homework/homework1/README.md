@@ -1,19 +1,24 @@
-# Project Title
+# Credit Risk Modeling for Loan Default Prediction
 **Stage:** Problem Framing & Scoping (Stage 01)
 ## Problem Statement
-<1–2 paragraphs: what problem & why it matters>
+Banks and lending platforms face the challenge of identifying which borrowers are most likely to default on their loans.  By building a model that predicts the probability of default, lenders can make more informed credit approval decisions, optimize portfolio risk, and comply with regulatory requirements for credit risk assessment. This problem matters because accurate credit risk models reduce financial losses and enable fairer access to credit.
 ## Stakeholder & User
-
-<Who decides? Who uses the output? Timing & workflow context>
+Credit investors, banks, and lending platforms. 
 ## Useful Answer & Decision
-<Descriptive / Predictive / Causal; metric; artifact to deliver>
+**Type of model:** Predictive \
+This project aims to deliver an interactive report showing risk tiering of applicants and key drivers of risk.
+
 ## Assumptions & Constraints
-<Bullets: data availability, capacity, latency, compliance, etc.>
+* Access to consumer loan-level data 
+* Sufficient computational resources to handle enough records
+
 ## Known Unknowns / Risks
-<Bullets: what’s uncertain; how you’ll test or monitor>
+* Macroeconomic changes/patterns may affect records
+* Data may be imbalanced since default events are rare
+
 ## Lifecycle Mapping
 Goal → Stage → Deliverable
-- <Goal A> → Problem Framing & Scoping (Stage 01) → <Deliverable X>
-- ...
+- Define scope of problem → Problem Framing & Scoping (Stage 01) → Written project description
+
 ## Repo Plan
 /data/, /src/, /notebooks/, /docs/ ; cadence for updates
