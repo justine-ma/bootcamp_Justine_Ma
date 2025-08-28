@@ -1,24 +1,26 @@
-# Credit Risk Modeling for Loan Default Prediction
-**Stage:** Problem Framing & Scoping (Stage 01)
-## Problem Statement
-Banks and lending platforms face the challenge of identifying which borrowers are most likely to default on their loans.  By building a model that predicts the probability of default, lenders can make more informed credit approval decisions, optimize portfolio risk, and comply with regulatory requirements for credit risk assessment. This problem matters because accurate credit risk models reduce financial losses and enable fairer access to credit.
-## Stakeholder & User
-Credit investors, banks, and lending platforms. 
-## Useful Answer & Decision
-**Type of model:** Predictive \
-This project aims to deliver an interactive report showing risk tiering of applicants and key drivers of risk.
+# Credit Risk Modeling 
 
-## Assumptions & Constraints
-* Access to consumer loan-level data 
-* Sufficient computational resources to handle enough records
+## Project Description and Structure
+This project develops a machine learning model to predict loan default probability.  
+The repository is structured as follows:
 
-## Known Unknowns / Risks
-* Macroeconomic changes/patterns may affect records
-* Data may be imbalanced since default events are rare
+- **/data/**: Datasets used for training and testing  
+- **/data/raw/**: Unprocessed raw data (not committed to Git)  
+- **/notebooks/**: Jupyter notebooks for exploration and experimentation  
+- **/src/**: Source code for data processing, modeling, and evaluation  
+- **/docs/**: Documentation, reports, and project write-ups  
+- **README.md**: Project overview and instructions
 
-## Lifecycle Mapping
-Goal → Stage → Deliverable
-- Define scope of problem → Problem Framing & Scoping (Stage 01) → Written project description
+## Data Storage
 
-## Repo Plan
-/data/, /src/, /notebooks/, /docs/ ; cadence for updates
+### Folder Structure
+- `data/raw/` - Contains original, unprocessed data in CSV format
+- `data/processed/` - Contains cleaned and processed data in Parquet format
+
+### Formats Used
+- **CSV**: Used for raw data storage because it's human-readable and widely supported
+- **Parquet**: Used for processed data because it's columnar, compressed, and preserves data types
+
+### Env Variables
+- `DATA_DIR_RAW=../data/raw` - Path for raw CSV files
+- `DATA_DIR_PROCESSED=../data/processed` - Path for processed Parquet files
